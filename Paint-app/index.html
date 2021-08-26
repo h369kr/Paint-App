@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Paint App</title>
+  <style>
+    #canvas {
+      width: 1900px;
+      height: 800px;
+      border: 1px solid #000000;
+      ;
+    }
+
+    .rectangle {
+      border: 1px solid #FF0000;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Simple Paint App</h1>
+  </center>
+
+  <div id="canvas"></div>
+  <br />
+  <center><button onClick="window.location.reload();">Reset</button></center>
+
+  <script src="func.js"></script>
+  <script>
+    initDraw(document.getElementById('canvas'));
+  </script>
+
+</body>
+
+</html>
